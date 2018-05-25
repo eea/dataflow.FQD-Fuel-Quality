@@ -1,0 +1,39 @@
+<p-card title="Petrol" styleClass="ui-fluid" [formGroup]="parentFormGroup">
+
+    <dynamic-form *ngIf="petrolFormGroup" [groupControl]="fuelPetrolGroupControl" [formGroup]="petrolFormGroup"
+                  [value]="fuelPetrol">
+
+        <div class="ui-g">
+            <div class="ui-g-2">
+                <button type="button" pButton
+                        label="Add Petrol"
+                        icon="fa-plus"
+                        (click)="addPetrol()"
+                        [disabled]="isPetrolLimitReached()">
+
+                </button>
+            </div>
+        </div>
+        <p-tabView *ngIf="petrolFormGroup.controls && fuelPetrol.petrols.length >= 3 && cols"
+                   [controlClose]="true"
+                   (onClose)="handleRemovePetrol($event)">
+            <!-- selected tab must be set manually whith dynamic tabs https://www.primefaces.org/primeng/#/tabview -->
+            <p-tabPanel *ngFor="let petrolFormGroup of petrolFormGroup.controls.petrols.controls; index as i"
+                        [header]="getPetrolHeader(i)"
+                        [selected]="i == 0"
+                        [closable]="isTabClosable(i)">
+
+                <fuel-petrol-tab [petrolFormGroup]="getPetrolFormGroup(i)"
+                                 [petrolGroupControl]="getPetrolGroupControl(i)"
+                                 [value]="fuelPetrol.petrols[i]"
+                                 [reportResultTypes]="reportResultTypes"
+                                 [columns]="cols?.reportingResults">
+
+                </fuel-petrol-tab>
+
+            </p-tabPanel>
+
+        </p-tabView>
+
+    </dynamic-form>
+</p-card>

@@ -1,0 +1,35 @@
+<error-messages *ngIf="groupControl && groupControl.showErrors"
+                [relatedFormGroup]="formGroup"
+                [showNestedErrors]="groupControl.showNestedFormGroupErrors">
+</error-messages>
+
+<div *ngIf="formGroup" [formGroup]="formGroup">
+
+    <ng-content select="[form-header]"></ng-content>
+
+
+    <div *ngFor="let group of groupedControls" class="ui-g">
+
+        <ng-container *ngFor="let control of group">
+            <!-- NESTED FORM GROUP-->
+            <dynamic-form *ngIf="control.controlType === ControlType.GROUP"
+                          [formGroup]="formGroup.get(control.key)"
+                          [groupControl]="control">
+            </dynamic-form>
+
+            <dynamic-form-control
+                *ngIf="control.controlType !== ControlType.GROUP && control.controlType !== ControlType.ARRAY"
+                [formGroup]="formGroup"
+                [control]="control"
+                [controlErrors]="getControlErrors(control.key)"
+                [controlsPerRow]="groupControl.controlsPerRow">
+            </dynamic-form-control>
+
+        </ng-container>
+
+    </div>
+
+    <ng-content></ng-content>
+
+</div>
+

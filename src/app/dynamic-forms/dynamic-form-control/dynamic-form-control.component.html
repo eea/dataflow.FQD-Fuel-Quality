@@ -1,0 +1,43 @@
+<div [formGroup]="formGroup">
+
+    <div [ngClass]="control.labelCssClasses">
+        <label [attr.for]="control.key">{{control.label}}:</label>
+        <span *ngIf="isFieldRequired()" [ngClass]="{ 'is-required': hasError('required')}">*</span>
+    </div>
+    <div [ngSwitch]="control.controlType" [ngClass]="control.controlCssClasses">
+
+        <!-- PRIME NG INPUT TEXT-->
+        <input *ngSwitchCase="ControlType.TEXT" pInputText type="text"
+               [id]="control.key"
+               [formControlName]="control.key">
+
+        <input *ngSwitchCase="ControlType.NUMBER" pInputText
+               [id]="control.key"
+               [formControlName]="control.key"
+               min="0">
+
+        <!-- PRIME NG AUTO COMPLETE-->
+        <p-autoComplete *ngSwitchCase="ControlType.AUTOCOMPLETE"
+                        [id]="control.key"
+                        [suggestions]="control['suggestions']"
+                        (completeMethod)="filter($event)"
+                        [field]="control['suggestionField']"
+                        [dropdown]="true"
+                        [formControlName]="control.key"
+                        [forceSelection]="true">
+        </p-autoComplete>
+
+        <!-- PRIME NG CALENDAR-->
+        <p-calendar *ngSwitchCase="ControlType.CALENDAR"
+                    [id]="control.key"
+                    [formControlName]="control.key"
+                    [dateFormat]="control['dateFormat']"
+                    [showIcon]="control['showIcon']">
+        </p-calendar>
+
+        <div *ngIf="controlErrors?.errors && hasErrors()" class="alert alert-danger" [innerHtml]="getErrorMessages()">
+        </div>
+
+    </div>
+
+</div>

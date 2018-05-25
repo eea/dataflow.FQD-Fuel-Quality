@@ -1,0 +1,306 @@
+{
+    "cols": {
+        "basicPetrolInfo": [
+            {
+                "field": "id",
+                "header": "#"
+            },
+            {
+                "field": "country",
+                "header": "Country"
+            },
+            {
+                "field": "reportingYear",
+                "header": "Reporting Year"
+            },
+            {
+                "field": "period",
+                "header": "Period(Summer or Winter)"
+            },
+            {
+                "field": "parentFuelGrade",
+                "header": "Parent Fuel Grade"
+            },
+            {
+                "field": "nationalFuelGrade",
+                "header": "National Fuel Grade"
+            },
+            {
+                "field": "sumui-g-2merPeriodNorA",
+                "header": "Summer Period (N or A)"
+            },
+            {
+                "field": "maximumBioethanolContent",
+                "header": "The maximum bioethanol content (% v/v)"
+            }
+        ],
+        "reportingResults": [
+            {
+                "field": "parameter",
+                "header": "Parameter",
+                "readOnly": true
+            },
+            {
+                "field": "unit",
+                "header": "Unit",
+                "readOnly": true
+            },
+            {
+                "field": "numOfSamples",
+                "header": "No of Samples"
+            },
+            {
+                "field": "min",
+                "header": "Minimum"
+            },
+            {
+                "field": "max",
+                "header": "Maximum"
+            },
+            {
+                "field": "median",
+                "header": "Median"
+            },
+            {
+                "field": "standardDeviation",
+                "header": "Standard Deviation"
+            },
+            {
+                "field": "toleranceLimit",
+                "header": "No Samples outside 95% tolerance limit"
+            },
+            {
+                "field": "sampleValue25",
+                "header": "25% of Sample Value"
+            },
+            {
+                "field": "sampleValue75",
+                "header": "75% of Sample Value"
+            },
+            {
+                "field": "nationalMin",
+                "header": "Minimum"
+            },
+            {
+                "field": "nationalMax",
+                "header": "Maximum"
+            },
+            {
+                "field": "directiveMin",
+                "header": "Minimum",
+                "readOnly": true
+            },
+            {
+                "field": "directiveMax",
+                "header": "Maximum",
+                "readOnly": true
+            },
+            {
+                "field": "method",
+                "header": "Method",
+                "readOnly": true
+            },
+            {
+                "field": "date",
+                "header": "Date",
+                "readOnly": true
+            }
+        ]
+    },
+    "reportResultTypes": [
+        {
+            "id": 1,
+            "field": "researchOctaneNumber",
+            "header": "Research Octane Number"
+        },
+        {
+            "id": 2,
+            "field": "motorOctaneNumber",
+            "header": "Motor Octane Number"
+        },
+        {
+            "id": 3,
+            "field": "vapourPressure",
+            "header": "Vapour Pressure"
+        },
+        {
+            "id": 4,
+            "field": "distillationEvaporated100",
+            "header": "Distillation Evaporated 100"
+        },
+        {
+            "id": 5,
+            "field": "distillationEvaporated150",
+            "header": "Distillation Evaporated 150"
+        },
+        {
+            "id": 6,
+            "field": "hydrocarbonOlefins",
+            "header": "Hydrocarbon analysis-Olefins"
+        },
+        {
+            "id": 7,
+            "field": "hydrocarbonAromatics",
+            "header": "Hydrocarbon analysis-Aromatics"
+        },
+        {
+            "id": 8,
+            "field": "hydrocarbonBenzene",
+            "header": "Hydrocarbon analysis-Benzene"
+        },
+        {
+            "id": 9,
+            "field": "oxygenContent",
+            "header": "Oxygen Content"
+        },
+        {
+            "id": 10,
+            "field": "oxygenContent2",
+            "header": "Oxygen Content*"
+        },
+        {
+            "id": 11,
+            "field": "methanol",
+            "header": "Methanol"
+        },
+        {
+            "id": 12,
+            "field": "ethanol",
+            "header": "Ethanol"
+        },
+        {
+            "id": 13,
+            "field": "isoPropylAlcohol",
+            "header": "Iso-Propyl alcohol"
+        },
+        {
+            "id": 14,
+            "field": "tertButylAlcohol",
+            "header": "Tert-butyl alcohol"
+        },
+        {
+            "id": 15,
+            "field": "isoButylAlcohol",
+            "header": "Iso-butyl alcohol"
+        },
+        {
+            "id": 16,
+            "field": "ethers",
+            "header": "Ethers with ≥5 carbon atoms / molecule"
+        },
+        {
+            "id": 17,
+            "field": "sulphurContent",
+            "header": "Sulphur content"
+        },
+        {
+            "id": 18,
+            "field": "leadContent",
+            "header": "Lead Content"
+        },
+        {
+            "id": 19,
+            "field": "manganese",
+            "header": "Manganese"
+        }
+    ],
+    "defaultEmptyValues": {
+        "petrols": [
+            {
+                "id": "1",
+                "basicPetrolInfo": {
+                    "period": "Summer",
+                    "parentFuelGrade": "Petrol",
+                    "summerPeriodNorA": "N"
+                },
+                "researchOctaneNumber": {
+                    "unit": "--",
+                    "method": "EN-ISO 5164",
+                    "date": {
+                        "year": "2005"
+                    }
+                },
+                "motorOctaneNumber": {
+                    "unit": "--",
+                    "method": "EN-ISO 5163",
+                    "date": {
+                        "year": "2006"
+                    }
+                },
+                "vapourPressure": {
+                    "unit": "kPa",
+                    "method": "EN-ISO 5163",
+                    "date": {
+                        "year": "2006"
+                    }
+                },
+                "distillationEvaporated100": {
+                    "unit": "% V/V",
+                    "method": "EN-ISO 5163",
+                    "date": {
+                        "year": "2006"
+                    }
+                },
+                "distillationEvaporated150": {
+                    "unit": "% V/V",
+                    "method": "EN-ISO 5163",
+                    "date": {
+                        "year": "2006"
+                    }
+                },
+                "hydrocarbonOlefins": {
+                    "unit": "% V/V",
+                    "method": "ASTM D 1319 EN 15553 EN-ISO 22854",
+                    "date": {
+                        "year": "1995"
+                    }
+                },
+                "hydrocarbonAromatics": {
+                    "unit": "% V/V",
+                    "method": "ASTM D 1319 EN 15553 EN-ISO 22854",
+                    "date": {
+                        "year": "1995"
+                    }
+                },
+                "hydrocarbonBenzene": {
+                    "unit": "% V/V",
+                    "method": "ASTM D 1319 EN 15553 EN-ISO 22854",
+                    "date": {
+                        "year": "1995"
+                    }
+                }
+            },
+            {
+                "id": "2",
+                "basicPetrolInfo": {
+                    "period": "Winter",
+                    "parentFuelGrade": "Petrol",
+                    "summerPeriodNorA": "N",
+                    "maximumBioethanolContent": "458"
+                },
+                "researchOctaneNumber": {
+                    "unit": "--",
+                    "method": "random",
+                    "date": {
+                        "year": "2007"
+                    }
+                }
+            },
+            {
+                "id": "3",
+                "basicPetrolInfo": {
+                    "period": "Full Year",
+                    "parentFuelGrade": "Petrol",
+                    "summerPeriodNorA": "N"
+                },
+                "researchOctaneNumber": {
+                    "unit": "--",
+                    "method": "random",
+                    "date": {
+                        "year": "2008"
+                    }
+                }
+            }
+        ]
+    }
+}

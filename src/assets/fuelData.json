@@ -1,0 +1,275 @@
+{
+    "contacts": {
+        "reportingYear": 2016,
+        "country": {
+            "id": 1,
+            "name": "Greece"
+        },
+        "dateReportCompleted": "11/04/13"
+    },
+    "petrol": {
+
+        "country": "Belgium",
+        "reportingYear": 2018,
+        "nationalFuelGrade": "Unleaded petrol 95 RON",
+
+        "petrols": [
+            {
+                "id": "1",
+                "basicPetrolInfo": {
+
+                    "period": "Summer",
+                    "parentFuelGrade": "Petrol",
+                    "summerPeriodNorA": "N",
+                    "maximumBioethanolContent": "458"
+
+                },
+                "researchOctaneNumber": {
+                    "unit": "--",
+                    "numOfSamples": 106,
+                    "min": 93.7,
+                    "max": 97.4,
+                    "median": 95.2,
+                    "mean": 95.4,
+                    "standardDeviation": 0.579,
+                    "toleranceLimit": 3,
+                    "sampleValue25": 95,
+                    "sampleValue75": 95.650,
+                    "nationalMin": "",
+                    "nationalMax": "",
+                    "directiveMin": 95,
+                    "directiveMax": "",
+                    "method": "EN-ISO 5164",
+                    "date": {
+                        "year": "2005"
+                    }
+                },
+                "motorOctaneNumber": {
+                    "unit": "--",
+                    "numOfSamples": 806,
+                    "min": 56.5,
+                    "max": 86.8,
+                    "median": 85.100,
+                    "mean": 85.000,
+                    "standardDeviation": 85.00,
+                    "toleranceLimit": 13,
+                    "sampleValue25": 85,
+                    "sampleValue75": 85.300,
+                    "nationalMin": "",
+                    "nationalMax": "",
+                    "directiveMin": 85,
+                    "directiveMax": "",
+                    "method": "EN-ISO 5163",
+                    "date": {
+                        "year": "2006"
+                    }
+                },
+                "vapourPressure": {
+                    "unit": "kPa",
+                    "numOfSamples": 109,
+                    "min": 56.5,
+                    "max": 86.8,
+                    "median": 85.100,
+                    "mean": 59.600,
+                    "standardDeviation": 85.00,
+                    "toleranceLimit": 13,
+                    "sampleValue25": 59,
+                    "sampleValue75": 59.900,
+                    "nationalMin": "",
+                    "nationalMax": "",
+                    "directiveMin": 85,
+                    "directiveMax": "",
+                    "method": "EN-ISO 5163",
+                    "date": {
+                        "year": "2006"
+                    }
+                },
+                "distillationEvaporated100": {
+                    "unit": "% V/V",
+                    "numOfSamples": 154,
+                    "min": 56.5,
+                    "max": 86.8,
+                    "median": 85.100,
+                    "mean": 55.300,
+                    "standardDeviation": 85.00,
+                    "toleranceLimit": 13,
+                    "sampleValue25": 54.300,
+                    "sampleValue75": 57.100,
+                    "nationalMin": "",
+                    "nationalMax": "",
+                    "directiveMin": 85,
+                    "directiveMax": "",
+                    "method": "EN-ISO 5163",
+                    "date": {
+                        "year": "2006"
+                    }
+                },
+                "distillationEvaporated150": {
+                    "unit": "% V/V",
+                    "numOfSamples": 224,
+                    "min": 56.5,
+                    "max": 86.8,
+                    "median": 85.100,
+                    "mean": 87.800,
+                    "standardDeviation": 85.00,
+                    "toleranceLimit": 13,
+                    "sampleValue25": 87.400,
+                    "sampleValue75": 88.700,
+                    "nationalMin": "",
+                    "nationalMax": "",
+                    "directiveMin": 85,
+                    "directiveMax": "",
+                    "method": "EN-ISO 5163",
+                    "date": {
+                        "year": "2006"
+                    }
+                },
+                "hydrocarbonOlefins": {
+                    "unit": "% V/V",
+                    "numOfSamples": 806,
+                    "min": 2.400,
+                    "max": 14.600,
+                    "median": 7.700,
+                    "mean": 8.400,
+                    "standardDeviation": 2.024,
+                    "toleranceLimit": 0,
+                    "sampleValue25": 7000,
+                    "sampleValue75": 9300,
+                    "nationalMin": "",
+                    "nationalMax": "",
+                    "directiveMin": "",
+                    "directiveMax": 18,
+                    "method": "ASTM D 1319 EN 15553 EN-ISO 22854",
+                    "date": {
+                        "year": "1995"
+                    }
+                },
+                "hydrocarbonAromatics": {
+                    "unit": "% V/V",
+                    "numOfSamples": 806,
+                    "min": 2.400,
+                    "max": 14.600,
+                    "median": 7.700,
+                    "mean": 8.400,
+                    "standardDeviation": 2.024,
+                    "toleranceLimit": 0,
+                    "sampleValue25": 7000,
+                    "sampleValue75": 9300,
+                    "nationalMin": "",
+                    "nationalMax": "",
+                    "directiveMin": "",
+                    "directiveMax": 18,
+                    "method": "ASTM D 1319 EN 15553 EN-ISO 22854",
+                    "date": {
+                        "year": "1995"
+                    }
+                },
+                "hydrocarbonBenzene": {
+                    "unit": "% V/V",
+                    "numOfSamples": 806,
+                    "min": 2.400,
+                    "max": 14.600,
+                    "median": 7.700,
+                    "mean": 8.400,
+                    "standardDeviation": 2.024,
+                    "toleranceLimit": 0,
+                    "sampleValue25": 7000,
+                    "sampleValue75": 9300,
+                    "nationalMin": "",
+                    "nationalMax": "",
+                    "directiveMin": "",
+                    "directiveMax": 18,
+                    "method": "ASTM D 1319 EN 15553 EN-ISO 22854",
+                    "date": {
+                        "year": "1995"
+                    }
+                },
+                "sampleFrequency": {
+                    "Jan": 806,
+                    "totalMonthValue": 806
+                }
+            },
+            {
+                "id": "2",
+                "basicPetrolInfo": {
+
+                    "period": "Winter",
+                    "parentFuelGrade": "Petrol",
+                    "summerPeriodNorA": "N",
+                    "maximumBioethanolContent": "458"
+                },
+                "researchOctaneNumber": {
+                    "unit": "--",
+                    "numOfSamples": 1268,
+                    "min": 0,
+                    "max": 90,
+                    "median": 45,
+                    "mean": 8.400,
+                    "standardDeviation": 2.024,
+                    "toleranceLimit": 0,
+                    "sampleValue25": 7000,
+                    "sampleValue75": 9300,
+                    "nationalMin": 0,
+                    "nationalMax": 35,
+                    "directiveMin": 56,
+                    "directiveMax": 67,
+                    "method": "random",
+                    "date": {
+                        "year": "2007"
+                    }
+                },
+                "motorOctaneNumber": {},
+                "vapourPressure": {},
+                "distillationEvaporated100": {},
+                "distillationEvaporated150": {},
+                "sampleFrequency": {
+                    "Jan": 806,
+                    "Feb": 1000,
+                    "totalMonthValue": 1806
+                }
+            },
+            {
+                "id": "3",
+                "basicPetrolInfo": {
+
+                    "period": "Full Year",
+                    "parentFuelGrade": "Petrol",
+                    "summerPeriodNorA": "N",
+                    "maximumBioethanolContent": "458"
+                },
+                "researchOctaneNumber": {
+                    "unit": "--",
+                    "numOfSamples": 1268,
+                    "min": 0,
+                    "max": 90,
+                    "median": 45,
+                    "mean": 8.400,
+                    "standardDeviation": 2.024,
+                    "toleranceLimit": 0,
+                    "sampleValue25": 7000,
+                    "sampleValue75": 9300,
+                    "nationalMin": 0,
+                    "nationalMax": 35,
+                    "directiveMin": 56,
+                    "directiveMax": 67,
+                    "method": "random",
+                    "date": {
+                        "year": "2008"
+                    }
+                },
+                "motorOctaneNumber": {},
+                "vapourPressure": {},
+                "distillationEvaporated100": {},
+                "distillationEvaporated150": {},
+                "sampleFrequency": {
+                    "Jan": 268,
+                    "Mar": 400,
+                    "Apr": 400,
+                    "May": 200,
+                    "Jun": 200,
+                    "totalMonthValue": 1468
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,31 @@
+/deep/ .ui-dialog-width {
+    width: 85%;
+    min-height: 200px;
+}
+
+/* DIALOG INPUT STYLES */
+
+/deep/ .font-style-85em label {
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+/* FIX FOR UI-FLUID DIALOG BUTTON ICONS */
+:host /deep/ .ui-fluid .ui-button-text-icon-left .ui-button-text, .ui-fluid .ui-button-text-icon-right .ui-button-text {
+    padding-left: 2.1em;
+}
+
+/* IMPROVEMENT FOR TABS (BORDER ETC) */
+:host /deep/ .ui-tabview .ui-tabview-panel {
+    border: 1px solid #bebebe;
+    padding: 0;
+    background: 0;
+}
+
+:host /deep/ .ui-tabview > .ui-tabview-nav {
+    padding-left: 0;
+}
+
+:host /deep/ .ui-tabview .ui-tabview-nav > li.ui-state-active {
+    top: 2px;
+}

@@ -1,0 +1,79 @@
+<p-card title="Contact & Summary" styleClass="ui-fluid" [formGroup]="parentFormGroup">
+
+    <dynamic-form [groupControl]="fuelContactsGroupControl" [formGroup]="fuelContactsFormGroup" [value]="contacts">
+
+        <div form-header>
+            <h4>
+                Details of those compiling the Fuel Quality Monitoring Report
+            </h4>
+            <small>
+                The authorities responsible for compiling the fuel quality monitoring report
+                are requested to complete the table below.
+            </small>
+
+            <div class="ui-g">
+                <div class="ui-g-2 ui-sm-6">
+                    <label>Reporting Year:</label>
+                </div>
+                <div class="ui-g-2 ui-sm-6">
+                    {{contacts?.reportingYear}}
+                </div>
+            </div>
+        </div>
+
+        <h4>
+            DEFINITIONS AND EXPLANATION
+        </h4>
+        <div>
+            <p>
+                Parent fuel grade: Directive 98/70/EC sets the environmental specifications for petrol and diesel fuel
+                marketed in the EU.
+                The specifications in the Directive can be thought of as ‘parent fuel grades’. These include (i) regular
+                unleaded
+                petrol (RON > 91), (ii) unleaded petrol (RON > 95) and (iii) diesel fuel.
+                <br> National fuel grade: Member States may, of course, define ‘national’ fuel grades which must still,
+                however,
+                respect the specification of the parent fuel grade. For example, national fuel grades may comprise super
+                unleaded
+                petrol (RON > 98), lead replacement petrol, zero sulphur petrol, zero sulphur diesel, etc.
+                <br> Zero sulphur or sulphur-free fuels: As of 1st January 2009 sulphur content of all fuels marketed
+                within a member
+                state territory must not exceed a maximum of 10 mg/kg.
+            </p>
+
+        </div>
+
+        <h4>
+            SUMMARY REPORTING FORMAT FOR PETROL & DIESEL
+        </h4>
+        <div>
+            <p>
+                Member States are requested to provide a brief general summary of the results of the year's monitoring,
+                including information
+                on any:
+                <br>- other parameters measured;
+                <br>- exclusions;
+                <br>- further details on breaches of parameter tolerance limits (i.e. number of samples, values);
+                <br>- enforcement actions taken as a result of breaches of the limit values/tolerance limits; and
+                <br>- additional information deemed relevant.
+                <br>In particular, Member States should provide additional explanatory information on reasoning for
+                exceptional cases
+                where exclusions are made, such as:
+                <br>- fuel grades marketed in very small quantities;
+                <br>- mandatory fuel parameters that are not measured;
+                <br>- geographical areas that are left outside the monitoring programme;
+                <br>- exceptionally high or low values of analytical results (i.e. outliers).
+            </p>
+
+        </div>
+
+        <!--NOTE: this ui-g class is absolutely required so as to not break the grid layout!-->
+        <div class="ui-g">
+
+            <dynamic-form-control [formGroup]="fuelContactsFormGroup" [control]="generalSummary">
+            </dynamic-form-control>
+        </div>
+
+    </dynamic-form>
+
+</p-card>

@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+.ui-state-disabled, .ui-widget:disabled {
+    opacity: 0.95;
+    border: 1px solid #e2d9d9;
+    background-color: rgb(181, 195, 209);
+}
+
+.ui-table {
+    font-size: 0.8em;
+}
+
+.ui-table .ui-table-tbody > tr.invalid-row {
+    background-color: #fcdedd ;
+}
+
+.ui-table .ui-table-tbody > tr.invalid-row:not(.ui-state-highlight):hover {
+    background-color: #ffcbc8;
+}
+
+.ui-table .ui-table-tbody > tr.invalid-row.ui-state-highlight {
+    color: #ab1a0f;
+    font-weight: bold;
+    background-color: #fdb3af;
+}
+

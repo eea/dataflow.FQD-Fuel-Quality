@@ -1,0 +1,34 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="background:white none repeat scroll 0 0;overflow:hidden;">
+    <div id="header">
+        <h1>EEA POC</h1>
+    </div>
+</div>
+<!--<error-messages [relatedForm]="parentForm"></error-messages>-->
+
+<dynamic-form [groupControl]="parentGroupControl" [formGroup]="parentFormGroup">
+    <div class="ui-g">
+        <div class="ui-g-12">
+
+            <button type="button" pButton icon="fa-save" iconPos="left" label="Submit Form" (click)="submit()"></button>
+        </div>
+    </div>
+    <p-tabView>
+        <p-tabPanel header="Contacts & Annual Summary">
+            <fuel-contacts [parentFormGroup]="parentFormGroup" [contacts]="fuelData?.contacts">
+            </fuel-contacts>
+        </p-tabPanel>
+        <p-tabPanel header="Petrol">
+            <fuel-petrol *ngIf="fuelData?.petrol.petrols.length > 0"
+                         [parentFormGroup]="parentFormGroup"
+                         [fuelPetrol]="fuelData?.petrol">
+            </fuel-petrol>
+        </p-tabPanel>
+    </p-tabView>
+
+
+</dynamic-form>
+
+<pre>{{fuelData | json}}</pre>
+
+
